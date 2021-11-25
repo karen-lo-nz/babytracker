@@ -1,5 +1,5 @@
 import connection from './connection'
-import { User } from './models/user'
+import { Stats } from './models/stats'
 
 export const getStats = async (db = connection) => {
     // return await knex.select("*").from<User>("users")
