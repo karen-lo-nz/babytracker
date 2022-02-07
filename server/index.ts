@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
   return res.send('Baby tracker')
 });
 
-app.use('/users', users)
-app.use('/stats', stats)
+app.use('/api/users', users)
+app.use('/api/stats', stats)
 
 
 app.listen(PORT, () => {

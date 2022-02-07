@@ -4,9 +4,9 @@ import * as statsDb from "../db/stats"
 const router = express.Router()
 
 router.get('/', async (req, res) => {
-    const users = await statsDb.getStats();
+    const stats = await statsDb.getStats();
 
-    return res.json(users)
+    return res.json(stats)
 })
 
 

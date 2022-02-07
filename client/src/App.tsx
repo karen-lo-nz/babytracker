@@ -2,6 +2,8 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Slider from "@mui/material/Slider"
+import { MenuList } from '@mui/material'
+import MilkForm from './components/MilkForm'
 
 function App() {
   const [count, setCount] = useState<number>(0)
@@ -17,8 +19,8 @@ function App() {
           </button>
           <Slider defaultValue={50} aria-label="Default" 
           valueLabelDisplay="auto" min={0} max={100} value={count} onChange={(e, v) => { setCount(v as number) }} />
-
         </p>
+        <MilkForm/>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
