@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -41,16 +42,10 @@ button {
   font-size: calc(10px + 2vmin);
 }
 
-/* .form{
-  display:grid;
-  grid-template-columns: 100% 100%;
-  text-align: left;
-  
-} */
-
 .form {
   background: white;
   border: 1px solid #dedede;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -59,6 +54,8 @@ button {
   padding: 30px 50px;
   color: gray;
   text-align: left;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .form-input {
@@ -67,14 +64,37 @@ button {
   box-sizing: border-box;
   padding: 10px;
   width: 100%;
+  font-size: 12px;
 }
 
 .form-label {
   color: darkblue;
-  display: flexbox;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonItem{
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin: 5px;
   padding: 10px;
+  background-color:lightblue;
+border-color: lightblue;
+    border-radius: 4px;
+    margin: fit-content;
+    width: 50%; 
+    align-items: center;
+    justify-content: center;
+
 }

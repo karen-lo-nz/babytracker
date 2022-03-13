@@ -9,5 +9,13 @@ router.get('/', async (req, res) => {
     return res.json(allFeed)
 })
 
+router.post('/', async (req, res) => {
+  
+  await feeds.addFeed(req.body)
+
+  const allFeed = await feeds.getFeeds();
+  return res.json(allFeed)
+})
+
 
 export default router

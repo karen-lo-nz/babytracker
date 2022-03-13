@@ -8,6 +8,7 @@ import feeds from './routes/feeds'
 const app = express();
 const PORT = 8000;
 
+app.use(express.json());
 
 app.get('/', (req, res) => {
 
@@ -16,7 +17,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/users', users)
 app.use('/api/stats', stats)
-app.use('/api/feeds',feeds)
+app.use('/api/v1/milk-form',feeds)
 
 
 app.listen(PORT, () => {
